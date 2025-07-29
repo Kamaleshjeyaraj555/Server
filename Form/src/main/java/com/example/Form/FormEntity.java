@@ -7,14 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
 import jakarta.servlet.annotation.MultipartConfig;
 
-//import lombok.Data;
 
-//@MultipartConfig(
-//	    maxFileSize = 80485760, // Set to 10 MB in bytes (adjust as needed)
-//	    maxRequestSize = 80971520, // Set to 20 MB in bytes (adjust as needed)
-//	    fileSizeThreshold = 3048576 // 1 MB in bytes
-//	)
-//@Data
 @Entity
 
 public class FormEntity {
@@ -97,12 +90,7 @@ public class FormEntity {
 	public void setFamilyMembers(String familyMembers) {
 		this.familyMembers = familyMembers;
 	}
-//	public String getPhoto() {
-//		return photo;
-//	}
-//	public void setPhoto(String photo) {
-//		this.photo = photo;
-//	}
+
 	private String name;
     private String email;
     private long contactNumber;
@@ -122,14 +110,7 @@ public class FormEntity {
 	}
 	private String image;
    
-//    private String photo;
-//    @Lob
-//    private byte[] photo;
-//	public byte[] getPhoto() {
-//		return photo;
-//	}
-//	public void setPhoto(byte[] photo) {
-//		this.photo = photo;
-//	}
+	this.photo = photo;
+
 
 }
